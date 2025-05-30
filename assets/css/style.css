@@ -48,7 +48,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 ==================================---*/
 .top-header-area {
     padding: 11px 0;
-    border-bottom: 1px solid #49ae4436;
+    border-bottom: 1px solid #49AE4436;
     z-index: 9;
     position: relative;
 }
@@ -110,7 +110,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 ==================================---*/
 
 .header-area {
-    border-bottom: 1px solid #49ae4421;
+    border-bottom: 1px solid #49AE4421;
     z-index: 9;
     position: relative;
     margin-bottom: -143px;
@@ -491,7 +491,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 
 /*
 <!-- =====================================-->
-<!-- Start echofy-text-section  -->
+<!-- Start ACCORES-text-section  -->
 <!-- =====================================-->*/
 .echofy-text-section {
     position: relative;
@@ -1824,10 +1824,23 @@ transform: rotate(360deg);
    <!--Echofy Footer Area-->
 ==================================---*/
 .footer-area {
-    background: url(../images/home1/footer-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 125px 0 0px;
+  position: relative;
+  z-index: 1;
+  background: none; /* quitamos la imagen de fondo aquí */
+  padding: 125px 0 0px;
+}
+
+.footer-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/home1/footer-bg.webp) no-repeat center center;
+  background-size: cover;
+  opacity: 0.8; /* ajusta esto a tu gusto */
+  z-index: -1;
 }
 
 .footer-social-address {
@@ -3975,7 +3988,7 @@ span.price {
    <!--Echofy Footer Area Home Three-->
 ===================================================---*/
 .home-three.footer-area {
-    background: url(../images/home3/footer-bg.jpg);
+    background: url(../images/home3/footer-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -4842,7 +4855,7 @@ span.price {
    <!--Echofy Strat Footer Area Home Four Css-->
 =========================================================---*/
 .home-four.footer-area {
-    background: url(../images/home4/footer-bg.jpg);
+    background: url(../images/home4/footer-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -6163,7 +6176,7 @@ span.price {
 =========================================================---*/
 
 .breadcumb-area {
-    background: url(../images/inner-images/breadcumb-bg.jpg);
+    background: url(../images/inner-images/breadcumb-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -7580,7 +7593,7 @@ p.blog-list-desc {
 }
 
 .google-map iframe {
-    width: 93%;
+    width: 100%;
     height: 630px;
     border-radius: 10px;
 }
@@ -8617,7 +8630,7 @@ p.blog-list-desc {
    <!--Echofy Strat Footer Area Home Six Css-->
 =========================================================---*/
 .home-six.footer-area {
-    background:url(../images/home6/footer-bg.jpg);
+    background:url(../images/home6/footer-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -9218,7 +9231,7 @@ p.blog-list-desc {
     height: 10px;
     left: 3px;
     top: 3px;
-    background: #49ae44bf;
+    background: #49AE44bf;
     border-radius: 50%;
 }
 
@@ -9939,7 +9952,7 @@ ul.social-box li a:hover {
     border-radius: 50%;
     transition: all 1s 1s ease;
     border: 3px solid transparent;
-    border-top-color: #f3297c;
+    border-top-color: #e5802a;
     -webkit-animation: spin 1.5s linear infinite;
     -moz-animation: spin 1.5s linear infinite;
     -o-animation: spin 1.5s linear infinite;
@@ -9955,7 +9968,7 @@ ul.social-box li a:hover {
     bottom: 6px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-left-color: #10eb9b;
+    border-left-color: #afac28;
     -webkit-animation: spin 2s linear infinite;
     -moz-animation: spin 2s linear infinite;
     -o-animation: spin 2s linear infinite;
@@ -9971,7 +9984,7 @@ ul.social-box li a:hover {
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-right-color: #fff;
+    border-right-color: #3c8a91;
     -webkit-animation: spin 2.5s linear infinite;
     -moz-animation: spin 2.5s linear infinite;
     -o-animation: spin 2.5s linear infinite;
